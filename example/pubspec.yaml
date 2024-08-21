@@ -27,6 +27,7 @@ flutter:
     - assets/gallery2.jpg
     - assets/gallery3.jpg
     - assets/firefox.svg
+    - assets/user_icon.png
 
   fonts:
     - family: PTSans

@@ -117,7 +117,10 @@ double _scaleForContained(Size size, Size childSize) {
   final double screenWidth = size.width;
   final double screenHeight = size.height;
 
-  return math.min(screenWidth / imageWidth, screenHeight / imageHeight);
+  if (imageWidth > screenWidth || imageHeight > screenHeight) {
+    return math.min(screenWidth / imageWidth, screenHeight / imageHeight);
+  }
+  return 1;
 }
 
 double _scaleForCovering(Size size, Size childSize) {
